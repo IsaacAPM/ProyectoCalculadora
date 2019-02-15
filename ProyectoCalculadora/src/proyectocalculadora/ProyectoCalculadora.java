@@ -18,6 +18,7 @@ public class ProyectoCalculadora {
         // TODO code application logic here
         System.out.println("Hola");
         int i = 0;
+        System.out.println("Adios");
     }
     
 }

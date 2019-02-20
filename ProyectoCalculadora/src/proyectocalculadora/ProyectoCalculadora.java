@@ -15,7 +15,7 @@ public class ProyectoCalculadora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(Calculadora.detectorErroresSintaxis("5+2"));
+        /*System.out.println(Calculadora.detectorErroresSintaxis("5+2"));
         System.out.println(Calculadora.detectorErroresSintaxis("(5+2)*6"));
         System.out.println(Calculadora.detectorErroresSintaxis("(5+6)(56+1"));
         System.out.println(Calculadora.detectorErroresSintaxis("{25*.89+(52*85)}-[25/82]"));
@@ -33,7 +33,13 @@ public class ProyectoCalculadora {
         System.out.println(Calculadora.detectorErroresMath("5+5/00000020"));
         System.out.println(Calculadora.detectorErroresMath("5+5/001+5"));
         
-      
+        String cadena="50.2+2.5/(3+45)*3-6/2*(1+1)-1";
+        
+        System.out.println(Calculadora.convertirPostfija(cadena));
+        System.out.println(Calculadora.convertirPostfija("(25+45)/85"));*/
+        
+        System.out.println(Calculadora.detectorErroresSintaxis("5+5/5+.5*(5+5)"));
+
     }
     
 }

@@ -15,11 +15,25 @@ public class ProyectoCalculadora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hola");
-        int i = 0;
-        System.out.println("Adios");
-        System.out.println("Adios");
+        System.out.println(Calculadora.detectorErroresSintaxis("5+2"));
+        System.out.println(Calculadora.detectorErroresSintaxis("(5+2)*6"));
+        System.out.println(Calculadora.detectorErroresSintaxis("(5+6)(56+1"));
+        System.out.println(Calculadora.detectorErroresSintaxis("{25*.89+(52*85)}-[25/82]"));
+        System.out.println(Calculadora.detectorErroresSintaxis("++++5-25.23.2"));
+        System.out.println(Calculadora.detectorErroresSintaxis("++++.5+"));
+        
+        System.out.println(Calculadora.detectorErroresMath("5+5/0"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/0.5"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/05"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/0+6"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/0(5)"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/00000005"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/000000"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/0000001"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/00000020"));
+        System.out.println(Calculadora.detectorErroresMath("5+5/001+5"));
+        
+      
     }
     
 }
